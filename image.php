@@ -64,7 +64,7 @@
                       update_option('wphcu_data', $hits+1);
                   }
               } else {
-              		$exclude_list = split("\n",get_option('wphcu_exclude_ips'));
+              		$exclude_list = explode("\n",get_option('wphcu_exclude_ips'));
 
               		if(!in_array($_SERVER['REMOTE_ADDR'],$exclude_list)) {
 	                  update_option('wphcu_data', $hits+1);
