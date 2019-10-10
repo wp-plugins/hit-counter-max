@@ -83,7 +83,7 @@
 			  echo '<style type="text/css">'.$form_css.'</style>';
               echo '<div class="hit-counter-max"'.$alignment_options.'>';
               //if (get_option('wphcu_pad_zeros') && strlen($hits) < 7) {
-                  for ($i = 0; $i < (4 - strlen($hits)); $i++) {
+                  for ($i = 0; $i < (6 - strlen($hits)); $i++) {
                       echo "<img src='".WP_PLUGIN_URL."/hit-counter-max/designs/$style/0.gif'>";
                   }
              // }                       
